@@ -42,12 +42,18 @@ namespace PowerBIExtensionMethods
                     case "Int64":
                         typeName = "Int64";
                         break;
+                    case "System.Money":
+                    case "System.Decimal":
+                    case "System.Float":
+                    case "System.Single":
                     case "System.Double":
                         typeName = "Double";
                         break;
+                    case "System.Bit":
                     case "System.Boolean":
                         typeName = "bool";
                         break;
+                    case "System.SmallDateTime":
                     case "System.DateTime":
                         typeName = "DateTime";
                         break;
@@ -98,12 +104,18 @@ namespace PowerBIExtensionMethods
                         case "Int64":
                             typeName = "Int64";
                             break;
+                        case "System.Money":
+                        case "System.Decimal":
+                        case "System.Float":
+                        case "System.Single":
                         case "System.Double":
                             typeName = "Double";
                             break;
+                        case "System.Bit":
                         case "System.Boolean":
                             typeName = "bool";
                             break;
+                        case "System.SmallDateTime":
                         case "System.DateTime":
                             typeName = "DateTime";
                             break;
